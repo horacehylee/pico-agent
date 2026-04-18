@@ -34,6 +34,13 @@ cp .env.example .env
 uv run python agent.py
 ```
 
+## 🧪 Running Tests
+
+```bash
+# Install dev dependencies and run tests
+uv run pytest test_agent.py -v
+```
+
 ## 🌍 System-wide Installation
 
 To use `pico` from any directory:
@@ -75,7 +82,7 @@ Environment variables are loaded from a `.env` file:
 ```
 pico-agent/
 ├── agent.py          # The entire agent (entry point)
-├── requirements.txt  # Python dependencies
+├── test_agent.py     # Unit tests
 ├── .env.example      # Template for environment variables
 └── README.md
 ```
