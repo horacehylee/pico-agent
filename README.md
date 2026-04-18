@@ -1,19 +1,19 @@
-# Pico Agent
+# 🤖 Pico Agent
 
-> A pico-sized coding agent used for experiment and testing agent harness with different LLM models.
+> ⚡ A pico-sized coding agent used for experiment and testing agent harness with different LLM models.
 
 Pico Agent is a minimal, single-file coding agent that connects to LLM providers via the OpenAI-compatible chat completions API. It ships with file reading, editing, searching, and shell execution tools — giving the model everything it needs to assist with real coding tasks, all in under 150 lines of Python.
 
-## Features
+## ✨ Features
 
-- **File operations** — read, create, and edit files
-- **Directory listing** — browse project structure
-- **Regex search** — find patterns across files recursively
-- **Shell execution** — run arbitrary commands (30s timeout)
-- **Agentic loop** — multi-turn tool calling until the task is done
-- **Multiple providers** — pluggable provider config for experimenting with different LLMs
+- 📄 **File operations** — read, create, and edit files
+- 📁 **Directory listing** — browse project structure
+- 🔍 **Regex search** — find patterns across files recursively
+- 🐚 **Shell execution** — run arbitrary commands (30s timeout)
+- 🔄 **Agentic loop** — multi-turn tool calling until the task is done
+- 🔌 **Multiple providers** — pluggable provider config for experimenting with different LLMs
 
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
 # Clone the repo
@@ -34,7 +34,7 @@ cp .env.example .env
 uv run python agent.py
 ```
 
-## System-wide Installation
+## 🌍 System-wide Installation
 
 To use `pico` from any directory:
 
@@ -56,23 +56,21 @@ pico
 ```
 
 The `pico` command will:
-- Stay in your current working directory
-- Use the installed virtual environment
-- Run agent.py from the repo
+- 📍 Stay in your current working directory
+- 🧪 Use the installed virtual environment
+- ▶️ Run agent.py from the repo
 
-## Configuration
+## ⚙️ Configuration
 
 Environment variables are loaded from a `.env` file:
 
 | Variable       | Description                | Default  |
 | -------------- | -------------------------- | -------- |
-| `BASE_URL`     | Base URL for the API       | `https://api.z.ai/api/coding/paas/v4` |
-| `MODEL`        | Model to use               | `glm-4.7`|
+| `BASE_URL`     | Base URL for the API       | `https://openrouter.ai/api/v1` |
+| `MODEL`        | Model to use               | `minimax/minimax-m2.5:free`|
 | `API_KEY`      | API key for the provider   | —        |
 
-
-
-## Project Structure
+## 📂 Project Structure
 
 ```
 pico-agent/
@@ -82,6 +80,6 @@ pico-agent/
 └── README.md
 ```
 
-## License
+## 📝 License
 
-MIT
+MIT © [Horace Lee](https://github.com/horacehylee)
