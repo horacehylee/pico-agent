@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_URL = os.getenv("BASE_URL", "https://api.z.ai/api/coding/paas/v4")
-MODEL = os.getenv("MODEL", "glm-4.7")
+BASE_URL = os.getenv("BASE_URL", "https://openrouter.ai/api/v1")
+MODEL = os.getenv("MODEL", "minimax/minimax-m2.5:free")
 API_KEY = os.getenv("API_KEY", "")
 
 def _headers(k):

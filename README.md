@@ -17,7 +17,7 @@ Pico Agent is a minimal, single-file coding agent that connects to LLM providers
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-org/pico-agent.git
+git clone https://github.com/horacehylee/pico-agent.git
 cd pico-agent
 
 # Install uv (if not already installed)
