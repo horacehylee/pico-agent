@@ -1,0 +1,8 @@
+#!/bin/bash
+# Pico Agent wrapper - find repo and run with uv
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(cd "$SCRIPT_DIR" && pwd)"
+
+cd "$(pwd)"  # Stay in user's current directory
+exec uv run --directory "$REPO_DIR" python "$REPO_DIR/agent.py" "$@"
